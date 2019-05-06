@@ -1,0 +1,11 @@
+[Unit]
+Description=NESPi Buttons and LED
+Wants=local-fs.target
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/storage/.config/nespi
+
+[Install]
+WantedBy=basic.target
